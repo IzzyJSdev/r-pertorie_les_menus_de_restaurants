@@ -1,0 +1,114 @@
+.restaurants {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 2%;
+  .restaurants_title {
+    font-size: 2rem;
+
+    margin-bottom: 2%;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  .restaurants_item__wrappper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .restaurants_item {
+      width: 48%;
+      cursor: pointer;
+      .inner_img {
+        padding: 0px 0px 45% 0px;
+
+        overflow: hidden;
+
+        position: relative;
+
+        margin-bottom: 2%;
+        img {
+          position: absolute;
+
+          width: 100%;
+          height: 100%;
+
+          top: 0;
+          left: 0;
+
+          object-fit: cover;
+        }
+      }
+      .item_litleNew {
+        width: 7%;
+        height: 5%;
+
+        position: absolute;
+        bottom: 80%;
+        left: 38%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #99e2d0;
+        .litleNew_txt {
+          color: #0c8e6e;
+
+          font-size: 1.1rem;
+        }
+      }
+      .item_litleNew__two {
+        width: 7%;
+        height: 5%;
+
+        position: absolute;
+        bottom: 80%;
+        right: 6%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #99e2d0;
+        .litleNew_txt {
+          color: #0c8e6e;
+
+          font-size: 1.1rem;
+        }
+      }
+      .wrap_txt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 2%;
+        .inner_txt {
+          display: flex;
+          flex-direction: column;
+
+          .item_title {
+            margin-bottom: 8%;
+
+            font-size: 1.3rem;
+            font-weight: bold;
+
+            &::first-letter {
+              text-transform: uppercase;
+            }
+            .item_txt {
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .icon_heart {
+          i{
+            color: red;
+            
+          }
+        }
+      }
+    }
+  }
+}

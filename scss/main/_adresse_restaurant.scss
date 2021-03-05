@@ -1,0 +1,14 @@
+.adresse_restaurant {
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .adresse_restaurant__icon {
+    margin-right: 1%;
+    font-size: 1.3rem;
+  }
+  .adresse_item {
+    font-size: 2rem;
+  }
+}

@@ -7,6 +7,9 @@
    <title>Ohmyfood</title>
    <script src="https://kit.fontawesome.com/d2cb653223.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="./css/normalise.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -20,125 +23,153 @@
       </header>
       <main class="main">
          <section class="adresse_restaurant">
-            <i class="fas fa-map-marker-alt"></i>
+            <i  class="fas fa-map-marker-alt adresse_restaurant__icon"></i>
             <address class="adresse_item">              
-               Paris,Belleville</address>
+               Paris, Belleville</address>
          </section><!-- adresse_restaurant -->
          <section class="title">
             <h1 class="title_principal">Reservez le menu qui vous convient</h1>
             <p class="title_txt">Decouvrez des restaurants d'exception, selectionnes par nos soins.</p>
             <button class="title_btn">Explorer nos restaurants</button>
          </section><!-- title -->
-         <section class="fonctionnement">
-            <article class="fonctionnement_title">
-               <h2 class="fonctionnement_title_item">Fonctionnement</h2>
+         <section class="fonctionment">
+            <article class="fonctionment_title">
+               <h2 class="fonctionment_title_item">Fonctionnement</h2>
             </article><!-- fonctionnement_title -->
-            <article class="fonctionnement_item">
-               <div class="item_number">1</div>
-               <div class="item_icon"><i class="fas fa-mobile-alt"></i>
-</div>
+            <article class="fonctionment_item">
+               <div class="item_number">
+                  <p>1</p>
+               </div><!-- item_number -->
+               <div class="item_icon">
+                  <i class="fas fa-mobile-alt "></i>
+               </div><!-- item_icon -->
                <div class="item_txt">Choisissez un restaurant</div>
             </article><!-- fonctionnement_item -->
-            <article class="fonctionnement_item">
-               <div class="item_number">2</div>
+
+            <article class="fonctionment_item">
+               <div class="item_number"><p>2</p></div>
                <div class="item_icon">
                   <i class="fas fa-bars"></i>
                </div>
                <div class="item_txt">Composez votre menu</div>
             </article><!-- fonctionnement_item -->
-            <article class="fonctionnement_item">
-               <div class="item_number">3</div>
+
+            <article class="fonctionment_item">
+               <div class="item_number"><p>3</p></div>
                <div class="item_icon">
                   <i class="fas fa-store"></i>
                </div>
                <div class="item_txt">Degustez au restaurant</div>
             </article><!-- fonctionnement_item -->
          </section><!-- fonctionnement -->
+         
          <section class="restaurants" >
             <article class="restaurants_title">
                <h2 class="restaurants_title_item">restaurants</h2>
-            </article>
-            <article class="restaurants_item">
-               <div class="inner_img">
-                  <img src="./img/restaurants/1.jpg" alt="photo_restaurants">
-               </div>
-               <div class="item_litleNew">
-                  <p class="litleNew_txt">Nouveau</p>
-               </div>
-               <div class="wrap_txt">
-                  <div class="inner_txt">
-                  <h3 class="item_title">la palette du gout</h3>
-                  <p class="item_txt">Ménimontant</p>
-               </div>
-               <div class="icon_heart">
-                     <i class="far fa-heart"></i>
-               </div>
-               </div>
-            </article>
-            <article class="restaurants_item">
-               <div class="inner_img">
-                  <img src="./img/restaurants/2.jpg" alt="photo_restaurants">
-               </div>
-               <div class="item_litleNew">
-                  <p class="litleNew_txt">Nouveau</p>
-               </div>
-               <div class="wrap_txt">
-                  <div class="inner_txt">
-                  <h3 class="item_title">la note enchantée</h3>
-                  <p class="item_txt">Charonne</p>
-               </div>
-               <div class="icon_heart">
-                  <i class="far fa-heart"></i>
-               </div>
-               </div>
-            </article>
-            <article class="restaurants_item">
-               <div class="inner_img">
-                  <img src="./img/restaurants/3.jpg" alt="photo_restaurants">
-               </div>
+            </article><!-- restaurants_title -->
+            <div class="restaurants_item__wrappper">
+               <!-- restaurants_item -->
+               <article class="restaurants_item">
+                  <div class="inner_img">
+                     <img src="./img/restaurants/1.jpg" alt="photo_restaurants">
+                  </div>              
+                  <div class="item_litleNew">
+                     <p class="litleNew_txt">Nouveau</p>
+                  </div>
+                  <div class="wrap_txt">                        
+                     <div class="inner_txt">
+                     <h3 class="item_title">la palette du gout</h3>
+                     <p class="item_txt">Ménimontant</p>
+                     </div><!-- inner_txt -->
+                     <div class="icon_heart">
+                           <i class="icons far fa-heart"></i>
+                     </div><!-- icon_heart -->
+                  </div><!-- wrap_txt -->
+               </article>
+               <!-- restaurants_item -->
+               <article class="restaurants_item">
+                  <div class="inner_img">
+                     <img src="./img/restaurants/2.jpg" alt="photo_restaurants">
+                  </div><!-- inner_img --> 
+                  <div class="item_litleNew__two">
+                     <p class="litleNew_txt">Nouveau</p>
+                  </div><!-- item_litleNew__two   -->   
+                  <div class="wrap_txt">                        
+                     <div class="inner_txt">                           
+                        <h3 class="item_title">la note enchantée</h3>
+                        <p class="item_txt">Charonne</p>
+                     </div><!-- inner_txt -->                     
+                     <div class="icon_heart">
+                        <!-- <i class="fas fa-heart"></i> -->
+                        
+                           <i class="icons far fa-heart "></i>
+                        
+                     </div>
+                  </div><!-- wrap_txt -->
+                  
+               </article>
+               <!-- restaurants_item -->
+               <article class="restaurants_item">
+                  <div class="inner_img">
+                     <img src="./img/restaurants/3.jpg" alt="photo_restaurants">
+                  </div><!-- inner_img -->                  
+                     <div class="wrap_txt">
+                        <div class="inner_txt">
+                           <h3 class="item_title">à la française</h3>
+                           <p class="item_txt">Cité Rouge</p>
+                        </div><!-- inner_txt -->
+                     
+                        <div class="icon_heart">
+                           <i class=" icons far fa-heart"></i>
+                        </div><!-- icon_heart -->
+                     </div><!-- wrap_txt -->                  
+               </article>
+               <!-- restaurants_item -->
+               <article class="restaurants_item">
+                  <div class="inner_img">
+                     <img src="./img/restaurants/4.jpg" alt="photo_restaurants">
+                  </div><!-- inner_img -->                  
+                     <div class="wrap_txt">
+                        <div class="inner_txt">
+                           <h3 class="item_title">le délice des sens</h3>
+                           <p class="item_txt">Folie-Méricourt</p>
+                        </div><!-- inner_txt -->
+                     
 
-               <div class="wrap_txt">
-                  <div class="inner_txt">
-                  <h3 class="item_title">à la française</h3>
-                  <p class="item_txt">Cité Rouge</p>
-               </div>
-               <div class="icon_heart">
-                  <i class="far fa-heart"></i>
-               </div>
-               </div>
-            </article>
-            <article class="restaurants_item">
-               <div class="inner_img">
-                  <img src="./img/restaurants/4.jpg" alt="photo_restaurants">
-               </div>
-
-               <div class="wrap_txt">
-                  <div class="inner_txt">
-                  <h3 class="item_title">le délice des sens</h3>
-                  <p class="item_txt">Folie-Méricourt</p>
-               </div>
-               <div class="icon_heart">
-                  <i class="far fa-heart"></i>
-               </div>
-               </div>
-            </article>
+                        <div class="icon_heart">
+                           <i class="icons far fa-heart"></i>
+                        </div><!-- icon_heart -->
+                  </div><!-- wrap_txt -->
+                               
+               </article><!-- restaurants_item -->
+            </div><!-- restaurants_item__wrappper -->
          </section><!-- restaurants -->
       </main>
       <footer class="footer">
-         <article class="footer_logo"></article>
-         <article class="footer_proposer">
+         <article class="footer_logo">
+            <a class="logo_link" href="#"> ohmyfood </a>
+         </article>
+         <article class="footer_items">
             <i class="fas fa-utensils"></i>
-            <h3 class="proposer_title">Proposer un restaurants</h3>
+            <h3 class="footer_items__title">
+               <a  class="footer_items_titleLink" href="#"> Proposer un restaurants </a>
+            </h3>
          </article>
-         <article class="footer_devenir">
+         <article class="footer_items">
             <i class="fas fa-hands-helping"></i>
-            <h3 class="devenir_title">Devenir partenaire</h3>
+            <h3 class="footer_items__title">
+               <a class="footer_items_titleLink" href="#"> Devenir partenaire</a>
+            </h3>
          </article>
-         <article class="footer_regles">
-            <h3 class="title_regles">Mentions légales</h3>
+         <article class="footer_items">
+            <h3 class="footer_items__title">
+               <a class="footer_items_titleLink" href="#"> Mentions légales</a>
+            </h3>
          </article>
-         <article class="footer_contact">
-            <h3 class="title_contact">Contact</h3>
+         <article class="footer_items">
+            <h3 class="footer_items__title"> 
+               <a class="footer_items_titleLink" href="#"> Contact</a>
+            </h3>
          </article>
       </footer>
    </div><!-- container -->
