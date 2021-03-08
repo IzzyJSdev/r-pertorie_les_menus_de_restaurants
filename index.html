@@ -8,7 +8,7 @@
    <script src="https://kit.fontawesome.com/d2cb653223.js" crossorigin="anonymous"></script>
    <link rel="stylesheet" href="./css/normalise.css">
    <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
+   
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -28,7 +28,7 @@
                Paris, Belleville</address>
          </section><!-- adresse_restaurant -->
          <section class="title">
-            <h1 class="title_principal">Reservez le menu qui vous convient</h1>
+            <h1 class="title_principal">Réservez le menu qui vous convient</h1>
             <p class="title_txt">Decouvrez des restaurants d'exception, selectionnes par nos soins.</p>
             <button class="title_btn">Explorer nos restaurants</button>
          </section><!-- title -->
@@ -36,31 +36,35 @@
             <article class="fonctionment_title">
                <h2 class="fonctionment_title_item">Fonctionnement</h2>
             </article><!-- fonctionnement_title -->
-            <article class="fonctionment_item">
-               <div class="item_number">
-                  <p>1</p>
-               </div><!-- item_number -->
-               <div class="item_icon">
-                  <i class="fas fa-mobile-alt "></i>
-               </div><!-- item_icon -->
-               <div class="item_txt">Choisissez un restaurant</div>
-            </article><!-- fonctionnement_item -->
+            <div class="wrap_fonctionment__items">
+               <article class="fonctionment_item">
+                  <div class="item_number">
+                     <p>1</p>
+                  </div><!-- item_number -->
+                  <div class="item_icon">
+                     <i class="fas fa-mobile-alt "></i>
+                  </div><!-- item_icon -->
+                  <div class="item_txt">Choisissez un restaurant</div>
+               </article><!-- fonctionnement_item -->
 
-            <article class="fonctionment_item">
-               <div class="item_number"><p>2</p></div>
-               <div class="item_icon">
-                  <i class="fas fa-bars"></i>
-               </div>
-               <div class="item_txt">Composez votre menu</div>
-            </article><!-- fonctionnement_item -->
+               <article class="fonctionment_item">
+                  <div class="item_number">
+                     <p>2</p>
+                  </div>
+                  <div class="item_icon">
+                     <i class="fas fa-bars"></i>
+                  </div>
+                  <div class="item_txt">Composez votre menu</div>
+               </article><!-- fonctionnement_item -->
 
-            <article class="fonctionment_item">
-               <div class="item_number"><p>3</p></div>
-               <div class="item_icon">
-                  <i class="fas fa-store"></i>
-               </div>
-               <div class="item_txt">Degustez au restaurant</div>
-            </article><!-- fonctionnement_item -->
+               <article class="fonctionment_item">
+                  <div class="item_number"><p>3</p></div>
+                  <div class="item_icon">
+                     <i class="fas fa-store"></i>
+                  </div>
+                  <div class="item_txt">Degustez au restaurant</div>
+               </article><!-- fonctionnement_item -->
+            </div>
          </section><!-- fonctionnement -->
          
          <section class="restaurants" >
@@ -81,9 +85,13 @@
                      <h3 class="item_title">la palette du gout</h3>
                      <p class="item_txt">Ménimontant</p>
                      </div><!-- inner_txt -->
-                     <div class="icon_heart">
-                           <i class="icons far fa-heart"></i>
-                     </div><!-- icon_heart -->
+                     
+                     <label class="icon_heart" for="heart">
+                        <input id="heart" type="radio" name="heart">
+                        <i></i>
+                        <!-- <i class="fas fa-heart"></i>
+                        <i class="icons far fa-heart"></i> -->
+                     </label><!-- icon_heart -->
                   </div><!-- wrap_txt -->
                </article>
                <!-- restaurants_item -->
@@ -99,12 +107,12 @@
                         <h3 class="item_title">la note enchantée</h3>
                         <p class="item_txt">Charonne</p>
                      </div><!-- inner_txt -->                     
-                     <div class="icon_heart">
-                        <!-- <i class="fas fa-heart"></i> -->
-                        
-                           <i class="icons far fa-heart "></i>
-                        
-                     </div>
+                     <label class="icon_heart">
+                        <input type="radio" name="heart">
+                        <i></i>
+                        <!-- <i class="fas fa-heart"></i>
+                        <i class="icons far fa-heart"></i> -->
+                     </label><!-- icon_heart -->
                   </div><!-- wrap_txt -->
                   
                </article>
@@ -115,13 +123,16 @@
                   </div><!-- inner_img -->                  
                      <div class="wrap_txt">
                         <div class="inner_txt">
-                           <h3 class="item_title">à la française</h3>
+                           <h3 class="item_title"><a href="./a_la_francaise.html">à la française</a></h3>
                            <p class="item_txt">Cité Rouge</p>
                         </div><!-- inner_txt -->
                      
-                        <div class="icon_heart">
-                           <i class=" icons far fa-heart"></i>
-                        </div><!-- icon_heart -->
+                        <label class="icon_heart">
+                           <input type="radio" name="heart">
+                           <i></i>
+                           <!-- <i class="fas fa-heart"></i>
+                           <i class="icons far fa-heart"></i> -->
+                        </label><!-- icon_heart -->
                      </div><!-- wrap_txt -->                  
                </article>
                <!-- restaurants_item -->
@@ -136,9 +147,12 @@
                         </div><!-- inner_txt -->
                      
 
-                        <div class="icon_heart">
-                           <i class="icons far fa-heart"></i>
-                        </div><!-- icon_heart -->
+                        <label class="icon_heart">
+                           <input type="radio" name="heart">
+                           <i></i>
+                           <!-- <i class="fas fa-heart"></i>
+                           <i class="icons far fa-heart"></i> -->
+                        </label><!-- icon_heart -->
                   </div><!-- wrap_txt -->
                                
                </article><!-- restaurants_item -->

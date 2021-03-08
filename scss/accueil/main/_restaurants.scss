@@ -102,11 +102,84 @@
             }
           }
         }
-        .icon_heart {
-          i{
-            color: red;
-            
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .restaurants {
+    .restaurants_item__wrappper {
+      .restaurants_item {
+        .item_litleNew,
+        .item_litleNew__two {
+          .litleNew_txt {
+            font-size: 0.9rem;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: 10% 5%;
+    .restaurants_title {
+      margin-bottom: 5%;
+      .restaurants_title_item {
+        font-weight: bold;
+      }
+    }
+    .restaurants_item__wrappper {
+      flex-direction: column;
+
+      .restaurants_item {
+        background-color: #fff;
+        border-radius: 25px;
+        width: 100%;
+        margin-bottom: 3%;
+        .inner_img {
+          border-top-left-radius: 25px;
+          border-top-right-radius: 25px;
+          padding: 0 0 57% 0;
+        }
+
+        .wrap_txt {
+          padding: 3%;
+        }
+
+        .item_litleNew {
+          width: 13%;
+          height: 3%;
+          left: 74%;
+          bottom: 88%;
+        }
+        .item_litleNew__two {
+          width: 13%;
+          height: 3%;
+          left: 74%;
+          bottom: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .restaurants {
+    .restaurants_item__wrappper {
+      .restaurants_item {
+        .item_litleNew {
+          width: 18%;
+          left: 69%;
+          bottom: 87%;
+        }
+        .item_litleNew__two {
+          width: 18%;
+          left: 69%;
+          bottom: 64%;
         }
       }
     }

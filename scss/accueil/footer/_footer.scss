@@ -1,0 +1,77 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: #353535;
+  color: #fff;
+
+  padding: 2%;
+  .footer_logo {
+    .logo_link {
+      font-family: "Shrikhand", cursive;
+      font-size: 2rem;
+
+      color: #fff;
+    }
+  }
+  .footer_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15%;
+    i {
+      font-size: 1.2rem;
+
+      margin-right: 3%;
+    }
+    .footer_items__title {
+      .footer_items_titleLink {
+        color: #fff;
+
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 796px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 5%;
+    .footer_logo {
+      margin-bottom: 2%;
+    }
+    .footer_items {
+      margin-bottom: 1.5%;
+      width: 70%;
+      justify-content: flex-start;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      i {
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 10% 5%;
+    .footer_logo {
+      margin-bottom: 5%;
+    }
+    .footer_items {
+      margin-bottom: 3%;
+      width: 70%;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

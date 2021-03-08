@@ -1,0 +1,39 @@
+.adresse_restaurant {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba($color: #d0d0d0, $alpha: 0.6);
+  .adresse_restaurant__icon {
+    margin-right: 1%;
+    font-size: 1.3rem;
+  }
+  .adresse_item {
+    font-size: 2rem;
+    color: #3f3f3f;
+    font-style: normal;
+  }
+}
+
+@media (max-width: 1070px) {
+  .adresse_restaurant {
+    padding: 2% 0;
+    .adresse_restaurant__icon {
+      font-size: 1.15rem;
+    }
+    .adresse_item {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .adresse_restaurant {
+    .adresse_restaurant__icon {
+      font-size: 1rem;
+    }
+    .adresse_item {
+      font-size: 0.9rem;
+    }
+  }
+}
